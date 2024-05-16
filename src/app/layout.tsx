@@ -18,7 +18,11 @@ export const metadata: Metadata = {
       url: "https://github.com/manhpvxj",
     },
   ],
-  metadataBase: new URL("http://localhost:3000"),
+  icons: "favicon.ico",
+  openGraph: {
+    images: "/assets/images/my-style.jpg",
+  },
+  metadataBase: new URL("https://manhtheweeb.id.vn"),
 };
 
 export default function RootLayout({
