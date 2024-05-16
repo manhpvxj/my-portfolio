@@ -27,7 +27,7 @@ export default function BackToTop() {
   const { y } = useWindowScroll();
   const [show, setShow] = useState(false);
   useEffect(() => {
-    y > 100 ? setShow(true) : setShow(false);
+    y > 150 ? setShow(true) : setShow(false);
   }, [y]);
   useEffect(() => {
     show ? controls.start("visible") : controls.start("hidden");

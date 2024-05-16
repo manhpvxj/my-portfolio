@@ -19,13 +19,13 @@ type Contact = {
 const contacts: Contact[] = [
   {
     name: "Email",
-    className: "bg-blue-500 hover:bg-blue-600",
+    className: "bg-yellow-500 hover:bg-yellow-600",
     href: "mailto:phammanhtb2001@gmail.com",
     icon: <Mail strokeWidth={2} />,
   },
   {
     name: "Linkedin",
-    className: "bg-pink-500 hover:bg-pink-600",
+    className: "bg-blue-600 hover:bg-blue-700",
     href: "https://www.linkedin.com/in/manhpvxj/",
     icon: <Linkedin strokeWidth={2} />,
   },
@@ -37,7 +37,7 @@ const contacts: Contact[] = [
   },
   {
     name: "Facebook",
-    className: "bg-blue-600 hover:bg-blue-700/90",
+    className: "bg-blue-600/80 hover:bg-blue-700/90",
     href: "https://facebook.com/ImNotYuuki",
     icon: <Facebook strokeWidth={2} />,
   },
