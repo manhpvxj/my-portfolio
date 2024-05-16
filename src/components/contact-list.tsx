@@ -10,36 +10,43 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import MotionList from "./ui/motion-list";
 import { ReactElement } from "react";
+import Image from "next/image";
 type Contact = {
   name: string;
   className: string;
   href: string;
-  icon: ReactElement;
+  icon: string;
 };
 const contacts: Contact[] = [
   {
     name: "Email",
-    className: "bg-yellow-500 hover:bg-yellow-600",
+    className: "bg-[#EA4335] hover:bg-[#EA4335CC]",
     href: "mailto:phammanhtb2001@gmail.com",
-    icon: <Mail strokeWidth={2} />,
+    icon: "gmail.svg",
   },
   {
     name: "Linkedin",
-    className: "bg-blue-600 hover:bg-blue-700",
+    className: "bg-[#0A66C2] hover:bg-[#0A66C2CC]",
     href: "https://www.linkedin.com/in/manhpvxj/",
-    icon: <Linkedin strokeWidth={2} />,
+    icon: "linkedin.svg",
   },
   {
     name: "Github",
-    className: "bg-black hover:bg-gray-800/90",
+    className: "bg-[#181717] hover:bg-[#181717CC]",
     href: "https://github.com/manhpvxj",
-    icon: <Github strokeWidth={2} />,
+    icon: "github.svg",
   },
   {
     name: "Facebook",
-    className: "bg-blue-600/80 hover:bg-blue-700/90",
+    className: "bg-[#0866FF] hover:[#0866FFCC]",
     href: "https://facebook.com/ImNotYuuki",
-    icon: <Facebook strokeWidth={2} />,
+    icon: "facebook.svg",
+  },
+  {
+    name: "Discord",
+    className: "bg-[#5865F2] hover:bg-[#5865F2CC]",
+    href: "https://facebook.com/ImNotYuuki",
+    icon: "discord.svg",
   },
 ];
 export default function ContactList({
@@ -57,9 +64,9 @@ export default function ContactList({
             <TooltipTrigger asChild>
               <Button
                 className={cn(
-                  "flex h-11 w-11 items-center justify-center rounded-full p-3 md:h-12 md:w-12",
-                  contact.className
+                  "flex items-center justify-center rounded-full p-3 md:h-12 md:w-12"
                 )}
+                variant={"ghost"}
                 asChild
                 aria-label={contact.name}
               >
@@ -68,7 +75,12 @@ export default function ContactList({
                   target="_blank"
                   aria-label={contact.name}
                 >
-                  {contact.icon}
+                  <Image
+                    src={`/assets/icons/${contact.icon}`}
+                    alt={contact.icon}
+                    width={60}
+                    height={60}
+                  />
                 </Link>
               </Button>
             </TooltipTrigger>

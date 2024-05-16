@@ -1,5 +1,4 @@
 "use client";
-import { cn } from "@/lib/utils";
 import clsx from "clsx";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -18,7 +17,7 @@ const Header = () => {
       className={clsx(
         "justify-center bg-white fixed py-4 flex w-full border-b md:justify-between select-none font-light md:px-16 translate-y-0 transition-all duration-300",
         {
-          " z-10 mx-auto w-[90%] md:w-[80%] lg:w-[60%] border rounded-lg translate-y-6 lg:translate-x-[calc(100vw_*_0.2)] md:translate-x-[calc(100vw_*_0.1)] translate-x-[calc(100vw_*_0.05)]":
+          " z-10 mx-auto w-[80%] lg:w-[60%] border rounded-lg translate-y-6 lg:translate-x-[calc(100vw_*_0.2)] translate-x-[calc(100vw_*_0.1)] ":
             show,
           "py-4 pt-6 lg:py-6": !show,
         }

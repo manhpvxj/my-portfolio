@@ -5,7 +5,7 @@ export default function AboutMe() {
   return (
     <section
       id="about"
-      className="mx-auto my-16 flex flex-col items-center justify-center gap-4 px-2 md:my-20  md:max-w-full lg:flex-row lg:items-start lg:gap-10"
+      className="mx-auto pt-16 md:pt-20 lg:pt-28 flex flex-col items-center justify-center gap-4 px-2 md:my-20  md:max-w-full lg:flex-row lg:items-start lg:gap-10"
     >
       <div className="order-2 lg:order-1 lg:w-2/3">
         <MotionDiv delayOffset={0.2}>
