@@ -124,7 +124,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="flex w-full flex-col items-center text-center pt-16 md:pt-20 lg:pt-28"
+      className="flex w-full flex-col items-center text-center pt-20 md:pt-28"
     >
       <MotionDiv>
         <h2 className="mb-4 text-xl md:text-3xl font-semibold">My Skills</h2>

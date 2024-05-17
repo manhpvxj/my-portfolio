@@ -45,7 +45,7 @@ const contacts: Contact[] = [
   {
     name: "Discord",
     className: "bg-[#5865F2] hover:bg-[#5865F2CC]",
-    href: "https://facebook.com/ImNotYuuki",
+    href: "https://discordapp.com/users/_caomei",
     icon: "discord.svg",
   },
 ];

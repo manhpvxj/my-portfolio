@@ -17,7 +17,7 @@ const Header = () => {
       className={clsx(
         "justify-center bg-white fixed py-4 flex w-full border-b md:justify-between select-none font-light md:px-16 translate-y-0 transition-all duration-300",
         {
-          " z-10 mx-auto w-[80%] lg:w-[60%] border rounded-lg translate-y-6 lg:translate-x-[calc(100vw_*_0.2)] translate-x-[calc(100vw_*_0.1)] ":
+          " z-10 mx-auto w-[90%] lg:w-[60%] border rounded-lg translate-y-6 lg:translate-x-[calc(100vw_*_0.2)] translate-x-[calc(100vw_*_0.05)] ":
             show,
           "py-4 pt-6 lg:py-6": !show,
         }
@@ -29,11 +29,11 @@ const Header = () => {
       >
         Pham Manh
       </Link>
-      <div className="nav-links flex gap-x-8 text-xs md:text-base justify-center items-center">
+      <div className="nav-links flex gap-x-8 text-xs md:text-base justify-between items-center">
         {links.map((link) => (
-          <span
+          <p
             key={link}
-            className="cursor-pointer text-base font-medium"
+            className="cursor-pointer text-base font-medium text-sm md:text-base"
             onClick={() => {
               document
                 .getElementById(link.toLowerCase())
@@ -41,7 +41,7 @@ const Header = () => {
             }}
           >
             {link}
-          </span>
+          </p>
         ))}
       </div>
     </nav>
