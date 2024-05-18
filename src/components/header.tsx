@@ -17,7 +17,7 @@ const Header = () => {
       className={clsx(
         "justify-center bg-white fixed py-4 flex w-full border-b md:justify-between select-none font-light md:px-16 translate-y-0 transition-all duration-300",
         {
-          " z-10 mx-auto w-[90%] lg:w-[60%] border rounded-lg translate-y-6 lg:translate-x-[calc(100vw_*_0.2)] translate-x-[calc(100vw_*_0.05)] ":
+          "z-10 w-[80vw] border rounded-lg translate-y-6 translate-x-[calc(100vw_*_0.1)]":
             show,
           "py-4 pt-6 lg:py-6": !show,
         }
