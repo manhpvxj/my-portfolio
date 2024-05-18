@@ -15,10 +15,10 @@ const Header = () => {
   return (
     <nav
       className={clsx(
-        "justify-center bg-white fixed py-4 flex w-full border-b md:justify-between select-none font-light md:px-16 translate-y-0 transition-all duration-300 right-1/2 translate-x-1/2",
+        "justify-center bg-white fixed py-4 flex border-b md:justify-between select-none font-light md:px-16 translate-y-0 transition-all duration-300 right-1/2 translate-x-1/2",
         {
           "z-10 w-[80%] border rounded-lg translate-y-6": show,
-          "py-4 pt-6 lg:py-6": !show,
+          "py-4 w-full pt-6 lg:py-6": !show,
         }
       )}
     >
