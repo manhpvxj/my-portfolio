@@ -35,7 +35,10 @@ export default function Hero() {
       </div>
       <MotionDiv delayOffset={1.6} className="my-8">
         <Button asChild className="p-5">
-          <Link href={"/assets/Resume_PhamVanManh.pdf"} target="_blank">
+          <Link
+            href={"/assets/PhamVanManh_Resume.pdf"}
+            download={"PhamVanManh_Resume.pdf"}
+          >
             <Download strokeWidth={2} className="mr-2" size={20} />
             Download My CV
           </Link>
