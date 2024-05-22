@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 export default function MotionText({
   children,
   delayOffset = 0,
-}: {
+}: Readonly<{
   children: string;
   delayOffset: number;
-}) {
+}>) {
   const text = children;
   const segmenter = new Intl.Segmenter("en", { granularity: "grapheme" });
   const letters = Array.from(segmenter.segment(text), (s) => s.segment).map(

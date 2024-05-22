@@ -3,6 +3,7 @@ import clsx from "clsx";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useWindowScroll } from "react-use";
+import { Button } from "./ui/button";
 
 const Header = () => {
   const links = ["About", "Skills", "Contact"];
@@ -15,10 +16,10 @@ const Header = () => {
   return (
     <nav
       className={clsx(
-        "justify-center bg-white fixed py-4 flex border-b md:justify-between select-none font-light md:px-16 translate-y-0 transition-all duration-300 right-1/2 translate-x-1/2",
+        "justify-center bg-white fixed py-2 pt-4 lg:py-5 flex border-b md:justify-between select-none font-light md:px-16 translate-y-0 transition-all duration-300 right-1/2 translate-x-1/2",
         {
           "z-10 w-[80%] border rounded-lg translate-y-6": show,
-          "py-4 w-full pt-6 lg:py-6": !show,
+          "w-full": !show,
         }
       )}
     >
@@ -30,9 +31,10 @@ const Header = () => {
       </Link>
       <div className="nav-links flex gap-x-8 text-xs md:text-base justify-between items-center">
         {links.map((link) => (
-          <p
+          <Button
             key={link}
-            className="cursor-pointer text-base font-medium text-sm md:text-base"
+            className="cursor-pointer font-medium text-sm md:text-base hover:bg-transparent p-0"
+            variant={"ghost"}
             onClick={() => {
               document
                 .getElementById(link.toLowerCase())
@@ -40,7 +42,7 @@ const Header = () => {
             }}
           >
             {link}
-          </p>
+          </Button>
         ))}
       </div>
     </nav>

@@ -7,12 +7,12 @@ export default function MotionList({
   className,
   delayOffset = 0,
   showWhenInView = true,
-}: {
+}: Readonly<{
   children: React.ReactNode[];
   className?: string;
   delayOffset?: number;
   showWhenInView?: boolean;
-}) {
+}>) {
   const controls = useAnimation();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -20,11 +20,13 @@ export default function MotionList({
     if (!showWhenInView) {
       controls.start("visible");
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   useEffect(() => {
     if (isInView && showWhenInView) {
       controls.start("visible");
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isInView]);
   return (
     <motion.ul
