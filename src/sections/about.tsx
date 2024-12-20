@@ -17,34 +17,40 @@ export default function AboutMe() {
           <MotionDiv delayOffset={0.4}>
             <p>
               Hello, I&apos;m Pham Manh ✌. I&apos;m a passionate{" "}
-              <b>Full-Stack Developer</b>. With 2 years of hands-on experience,
-              I&apos;ve honed my skills in both front-end and back-end
-              development.
+              <b>Full-Stack Developer</b> with 3 years of hands-on experience.
             </p>
           </MotionDiv>
           <MotionDiv delayOffset={0.5}>
             <p>
-              As a technologies enthusiast, I am highly passionate about
-              building full-stack web applications. And I love learning new
-              technologies, especially elegant code architectures and design
-              patterns. I hope to leverage my technical skills to build valuable
-              apps that can make a difference in people&apos;s lives.
+              Throughout my career, I&apos;ve had the opportunity to work on
+              several exciting projects where I honed my skills in crafting
+              seamless user experiences and building efficient logic. My
+              approach to development is characterized by a strong emphasis on
+              collaboration, problem-solving, and continuous learning, ensuring
+              that I stay updated with the latest industry trends and
+              technologies. I hope to leverage my technical skills to build
+              valuable apps that can make a difference in people&apos;s lives.
             </p>
           </MotionDiv>
           <MotionDiv delayOffset={0.6}>
             <p>
-              Besides of programming, I also obsessed with photography. I enjoy
-              capturing all things in daily life. So, If you&apos;re passionate
-              about both, I hope we can be friend.
+              In my free time, you&apos;ll often find me experimenting with new
+              photography techniques or exploring the latest fashion trends. My
+              diverse passions not only fuel my creativity but also contribute
+              to my ability to think outside the box in problem-solving
+              scenarios. I&apos;m excited to continue my journey in tech,
+              further develop my skills, and hopefully collaborate with
+              like-minded individuals who share my enthusiasm for innovation and
+              creativity.
             </p>
           </MotionDiv>
         </article>
       </div>
       <div className="lg:order-2 lg:w-1/3">
         <MotionDiv delayOffset={0.4}>
-          <div className="w-[300px] min-w-[240px] min-h-[320px] h-[400px]">
+          <div className="relative w-[360px] h-[480px] mx-auto">
             <Image
-              src={"/assets/images/my-style.JPG"}
+              src={"/assets/images/my-style.JPEG"}
               alt="me"
               fill
               className="rounded-xl"

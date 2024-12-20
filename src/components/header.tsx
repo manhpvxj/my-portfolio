@@ -4,23 +4,24 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useWindowScroll } from "react-use";
 import { Button } from "./ui/button";
+import { ScrollProgress } from "./ui/scroll-progress";
 
 const Header = () => {
   const links = ["About", "Skills", "Contact"];
-  const { y } = useWindowScroll();
-  const [show, setShow] = useState(false);
-  useEffect(() => {
-    y > 150 ? setShow(true) : setShow(false);
-  }, [y]);
+  // const { y } = useWindowScroll();
+  // const [show, setShow] = useState(false);
+  // useEffect(() => {
+  //   y > 150 ? setShow(true) : setShow(false);
+  // }, [y]);
 
   return (
     <nav
       className={clsx(
-        "justify-center bg-white fixed py-2 pt-4 lg:py-5 flex border-b md:justify-between select-none font-light md:px-16 translate-y-0 transition-all duration-300 right-1/2 translate-x-1/2",
-        {
-          "z-10 w-[80%] border rounded-lg translate-y-6": show,
-          "w-full": !show,
-        }
+        "w-full z-10 justify-center bg-white fixed py-2 pt-4 border-b lg:py-5 flex md:justify-between select-none font-light md:px-16 translate-y-0 transition-all duration-300 right-1/2 translate-x-1/2"
+        // {
+        //   "z-10 w-[80%] border rounded-lg translate-y-6": show,
+        //   "w-full": !show,
+        // }
       )}
     >
       <Link
@@ -45,6 +46,7 @@ const Header = () => {
           </Button>
         ))}
       </div>
+      <ScrollProgress className="top-[60px] lg:top-[77px]" />
     </nav>
   );
 };
