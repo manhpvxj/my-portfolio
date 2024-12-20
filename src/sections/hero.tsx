@@ -15,7 +15,7 @@ export default function Hero() {
       <div className="overflow-hidden rounded-full">
         <MotionDiv>
           <div className="h-[250px] w-[250px] md:h-[350px] md:w-[350px] p-5">
-            <Image src={"/assets/images/avatar.JPEG"} alt="avatar" fill />
+            <Image src={"/assets/images/avatar.jpeg"} alt="avatar" fill />
           </div>
         </MotionDiv>
       </div>
