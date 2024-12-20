@@ -50,7 +50,7 @@ export default function AboutMe() {
         <MotionDiv delayOffset={0.4}>
           <div className="relative w-[360px] h-[480px] mx-auto">
             <Image
-              src={"/assets/images/my-style.JPEG"}
+              src={"/assets/images/my-style.jpeg"}
               alt="me"
               fill
               className="rounded-xl"
