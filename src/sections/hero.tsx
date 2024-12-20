@@ -15,7 +15,7 @@ export default function Hero() {
       <div className="overflow-hidden rounded-full">
         <MotionDiv>
           <div className="h-[250px] w-[250px] md:h-[350px] md:w-[350px] p-5">
-            <Image src={"/assets/images/avatar.JPG"} alt="avatar" fill />
+            <Image src={"/assets/images/avatar.JPEG"} alt="avatar" fill />
           </div>
         </MotionDiv>
       </div>
@@ -36,11 +36,11 @@ export default function Hero() {
       <MotionDiv delayOffset={1.6} className="my-8">
         <Button asChild className="p-5">
           <Link
-            href={"/assets/PhamVanManh_Resume.pdf"}
-            download={"PhamVanManh_Resume.pdf"}
+            href={"/assets/PhamVanManh_SoftwareEngineer_CV.pdf"}
+            download={"PhamVanManh_SoftwareEngineer_CV.pdf"}
           >
             <Download strokeWidth={2} className="mr-2" size={20} />
-            Download My CV
+            My CV
           </Link>
         </Button>
       </MotionDiv>
