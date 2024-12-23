@@ -1,4 +1,5 @@
 import { MotionDiv } from "@/components";
+import { BorderBeam } from "@/components/border-beam";
 import Image from "next/image";
 
 export default function AboutMe() {
@@ -48,13 +49,14 @@ export default function AboutMe() {
       </div>
       <div className="lg:order-2 lg:w-1/3">
         <MotionDiv delayOffset={0.4}>
-          <div className="relative w-[360px] h-[480px] mx-auto">
+          <div className="relative w-[300px] h-[400px] md:w-[360px] md:h-[480px] mx-auto rounded-xl">
             <Image
               src={"/assets/images/my-style.jpeg"}
               alt="me"
               fill
               className="rounded-xl"
             />
+            <BorderBeam />
           </div>
         </MotionDiv>
       </div>

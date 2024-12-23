@@ -117,6 +117,10 @@ export default function Skills() {
           name: "Postman",
           icon: "postman.png",
         },
+        {
+          name: "Git",
+          icon: "git.png",
+        },
       ],
     },
   ];
@@ -151,14 +155,8 @@ function SkillCard({ icon, name }: Readonly<{ icon: string; name: string }>) {
   return (
     <div className="group rounded-xl border-none p-5 text-center shadow-none transition-all duration-200 ease-linear hover:scale-110 hover:drop-shadow-xl">
       <div className="flex flex-col items-center gap-2">
-        <div className="flex h-16 w-16 items-center justify-center">
-          <Image
-            src={`/assets/icons/${icon}`}
-            alt={name}
-            priority
-            width={64}
-            height={64}
-          />
+        <div className="relative h-16 w-16">
+          <Image src={`/assets/icons/${icon}`} alt={name} fill />
         </div>
         <p className="text-sm md:text-base">{name}</p>
       </div>
