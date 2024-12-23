@@ -37,13 +37,10 @@ export default function Hero() {
       <MotionDiv delayOffset={1.6} className="my-8">
         <div className="relative rounded-lg h-10 w-28">
           <Button asChild className="p-5 rounded-lg">
-            <Link
-              href={"/assets/PhamVanManh_SoftwareEngineer_CV.pdf"}
-              download={"PhamVanManh_SoftwareEngineer_CV.pdf"}
-            >
+            <a href={"/assets/PhamVanManh_SoftwareEngineer_CV.pdf"} download>
               <Download strokeWidth={2} className="mr-2" size={20} />
               My CV
-            </Link>
+            </a>
           </Button>
           <BorderBeam size={50} />
         </div>
