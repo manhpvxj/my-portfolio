@@ -1,4 +1,5 @@
 import { MotionDiv, MotionText } from "@/components";
+import { BorderBeam } from "@/components/border-beam";
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 import Image from "next/image";
@@ -34,15 +35,18 @@ export default function Hero() {
         </MotionDiv>
       </div>
       <MotionDiv delayOffset={1.6} className="my-8">
-        <Button asChild className="p-5">
-          <Link
-            href={"/assets/PhamVanManh_SoftwareEngineer_CV.pdf"}
-            download={"PhamVanManh_SoftwareEngineer_CV.pdf"}
-          >
-            <Download strokeWidth={2} className="mr-2" size={20} />
-            My CV
-          </Link>
-        </Button>
+        <div className="relative rounded-lg h-10 w-28">
+          <Button asChild className="p-5 rounded-lg">
+            <Link
+              href={"/assets/PhamVanManh_SoftwareEngineer_CV.pdf"}
+              download={"PhamVanManh_SoftwareEngineer_CV.pdf"}
+            >
+              <Download strokeWidth={2} className="mr-2" size={20} />
+              My CV
+            </Link>
+          </Button>
+          <BorderBeam size={50} />
+        </div>
       </MotionDiv>
     </section>
   );
