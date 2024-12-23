@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   ],
   icons: "favicon.ico",
   openGraph: {
-    images: "/assets/images/my-style.JPEG",
+    images: "/assets/images/my-style.jpeg",
   },
   metadataBase: new URL("https://manhtheweeb.id.vn"),
 };
