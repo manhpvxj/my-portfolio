@@ -96,6 +96,10 @@ export default function Skills() {
           name: "Redis",
           icon: "redis.png",
         },
+        {
+          name: "Kubernetes",
+          icon: "kubernetes.png",
+        },
       ],
     },
     {
